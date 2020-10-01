@@ -16,4 +16,9 @@ jobs:
         with:
           command: dump-autoload
           only_args: --no-dev --no-interaction --classmap-authoritative
-
+          
+      - name: Download the Agent Based SCA Scanner
+        with:
+         #env: # Set the secret as an input
+           SRCCLR_API_TOKEN: ${{ secrets.SRCCLR_API_TOKEN }}
+           run: curl -sSL https://download.sourceclear.com/ci.sh | sh
