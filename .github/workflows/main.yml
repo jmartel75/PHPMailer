@@ -22,7 +22,7 @@ jobs:
       # filepath
             filepath: veracode.zip
       # version
-            version: "${{ steps.time.outputs.time }}"
+            version: ${{ steps.time.outputs.time }}
       # vid
             vid: ${{ secrets.VERACODE_API_ID }}
       # vkey
