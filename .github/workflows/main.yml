@@ -22,7 +22,8 @@ jobs:
       # filepath
             filepath: veracode.zip
       # version
-            version: ${{ steps.time.outputs.time }}
+            version: "GitHub Actions job $GITHUB_RUN_NUMBER"
+
       # vid
             vid: ${{ secrets.VERACODE_API_ID }}
       # vkey
